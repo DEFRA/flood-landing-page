@@ -1,16 +1,13 @@
-body{
-  display: none!important;
-  background-attachment: fixed; 
-}
+
 .govuk-panel__title {
   margin-top: 0;
   margin-bottom: govuk-spacing(4);
-  @include govuk-font($size: 42, $weight: bold);
+  @include govuk-font($size: 36, $weight: bold);
 }
 .govuk-panel{
-  padding: 20px;
-  color: pink; 
+  padding: 15px;
+  cursor: pointer;
 }
-.govuk-panel--confirmation{ 
-  background: red!important; 
+.govuk-panel__body{
+  font-size: 1.8rem; 
 }
