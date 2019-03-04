@@ -1,0 +1,11 @@
+
+.govuk-panel__title {
+  margin-top: 0;
+  margin-bottom: govuk-spacing(4);
+
+  @include govuk-font($size: 42, $weight: bold);
+}
+
+.govuk-panel{
+  padding: 20px;
+}

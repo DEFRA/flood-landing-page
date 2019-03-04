@@ -4,6 +4,7 @@ $govuk-global-styles: true;
 // Import GOV.UK Frontend and any extension styles if extensions have been configured
 @import "lib/extensions/extensions";
 
+
 // Patterns that aren't in Frontend
 @import "patterns/step-by-step-navigation";
 @import "patterns/task-list";
@@ -12,4 +13,6 @@ $govuk-global-styles: true;
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 
+//custom
+@import "components/custom";
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
