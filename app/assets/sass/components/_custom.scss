@@ -5,9 +5,9 @@
   @include govuk-font($size: 36, $weight: bold);
 }
 .govuk-panel{
-  padding: 15px;
+  padding: 15px!important; 
   cursor: pointer;
 }
 .govuk-panel__body{
-  font-size: 1.8rem; 
+  font-size: 1.8rem!important; 
 }
