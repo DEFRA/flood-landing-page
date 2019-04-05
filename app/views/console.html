@@ -9,7 +9,7 @@ GOV.UK Flood Digital Managment Console Mockup
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-      <h2 class="govuk-heading-l">GOV.UK Flood Digital Managment Console - Mockup V0.2
+      <h2 class="govuk-heading-l">GOV.UK Flood Digital Managment Console - Mockup V0.3
         </h2>
         <div class="govuk-inset-text">
             This Information was last updated: 05/04/2019 - 14:53PM GMT
@@ -336,11 +336,11 @@ GOV.UK Flood Digital Managment Console Mockup
                   </thead>
                   <tbody class="govuk-table__body">
                     <tr class="govuk-table__row noborder">
-                      <td class="govuk-table__cell noborder"><input class="govuk-input" id="event-name" name="event-name" type="text"></td>
-                        <td class="govuk-table__cell noborder"> <select class="govuk-select custom" id="sort" name="sort">
-                            <option value="published">Merseyside</option>
-                            <option value="updated" selected>Lancashire</option>
-                            <option value="views">Manchester</option>
+                      <td class="govuk-table__cell noborder"><input class="govuk-input" id="event-name" name="event-name" type="text" placeholder="Preston"></td>
+                        <td class="govuk-table__cell noborder half"> <select class="govuk-select custom" id="sort" name="sort">
+                            <option value="updated" selected>Cumbria & Lancashire</option>
+                            <option value="published">Shropshire & Herefordshire </option>
+                            <option value="views">Greater Manchester, Merseyside & Cheshire</option>
                           </select>
                       </td>
                     </tr>
@@ -350,6 +350,43 @@ GOV.UK Flood Digital Managment Console Mockup
               <button type="submit" class="govuk-button" href="#">
                 Search
               </button>
+
+              <table class="govuk-table">
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row bg">
+                        <th class="govuk-table__header" scope="col">Preston</th>
+                      <th class="govuk-table__header center" scope="col">Total</th>
+                      <th class="govuk-table__header" scope="col">Local Area Name</th>
+                      <th class="govuk-table__header" scope="col">Last Changed</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">Severe Flood Warnings</td>
+                      <td class="govuk-table__cell">2</td>
+                      <td class="govuk-table__cell">Prestonby <br>Holme and Chapel street</td>
+                      <td class="govuk-table__cell">04/03/2019 - 16:34</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">Flood Warnings</td>
+                      <td class="govuk-table__cell">2</td>
+                      <td class="govuk-table__cell">Preston Campsite<br>Elliot Park at Preston</td>
+                      <td class="govuk-table__cell">04/03/2019 - 14:32</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell">Flood Alerts</td>
+                      <td class="govuk-table__cell">2</td>
+                      <td class="govuk-table__cell">Coast from Cockermouth to Preston Rd<br>Coast at Preston</td>
+                      <td class="govuk-table__cell">04/03/2019 - 11:25</td>
+                    </tr>
+                    <tr class="govuk-table__row last">
+                      <td class="govuk-table__cell">No Longer in Force</td>
+                      <td class="govuk-table__cell">1</td>
+                      <td class="govuk-table__cell">Coast from St Bees Head to Preston Rd</td>
+                      <td class="govuk-table__cell">04/03/2019 - 09:15</td>
+                    </tr>
+                  </tbody>
+                </table>
             </section>
            
           </div>
