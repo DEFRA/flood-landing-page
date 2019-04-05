@@ -27,6 +27,11 @@ GOV.UK Flood Digital Managment Console Mockup
                 </a>
               </li>
               <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#search">
+                  Search
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
                 <a class="govuk-tabs__tab" href="#past-week">
                   Area View
                 </a>
@@ -82,7 +87,9 @@ GOV.UK Flood Digital Managment Console Mockup
                   </tr>
                 </tbody>
               </table>
-          
+              <button type="submit" class="govuk-button" href="#">
+                  Refresh
+                </button>
             </section>
             <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
               <h2 class="govuk-heading-l">Area View</h2>
@@ -182,7 +189,10 @@ GOV.UK Flood Digital Managment Console Mockup
               </tr>
                 </tbody>
               </table>
-          
+         
+              <button type="submit" class="govuk-button" href="#">
+                  Refresh
+                </button>
             </section>
             <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="cumbria">
               <h2 class="govuk-heading-l">Area View</h2>
@@ -222,7 +232,11 @@ GOV.UK Flood Digital Managment Console Mockup
                   </tr>
                 </tbody>
               </table>
-          
+              <button type="submit" class="govuk-button" href="#">
+                  Refresh
+                </button>
+                <p>*this is the Cumbria view when clicking on Cumbria in the Summary Window</p>
+
             </section>
             <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
               <h2 class="govuk-heading-l">Severity View</h2>
@@ -308,15 +322,37 @@ GOV.UK Flood Digital Managment Console Mockup
               </table>
           
             </section>
+
+            <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="search">
+              <h2 class="govuk-heading-l">Search</h2>
+
+
+              <table class="govuk-table">
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row noborder">
+                      <th class="govuk-table__header noborder" scope="col">Search Query</th>
+                      <th class="govuk-table__header noborder" scope="col">Geographical Area</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row noborder">
+                      <td class="govuk-table__cell noborder"><input class="govuk-input" id="event-name" name="event-name" type="text"></td>
+                        <td class="govuk-table__cell noborder"> <select class="govuk-select custom" id="sort" name="sort">
+                            <option value="published">Merseyside</option>
+                            <option value="updated" selected>Lancashire</option>
+                            <option value="views">Manchester</option>
+                          </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              <button type="submit" class="govuk-button" href="#">
+                Search
+              </button>
+            </section>
            
           </div>
- 
- 
- 
-          <button type="submit" class="govuk-button" href="#">
-              Refresh
-            </button>
-            <p>*this is the Cumbria view when clicking on Cumbria in the Summary Window</p>
  
  
       </div>   
