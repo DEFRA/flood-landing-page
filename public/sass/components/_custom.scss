@@ -45,7 +45,7 @@
 }
 .govuk-table__header,
 .govuk-table__cell {
-  padding: 0px 10px;
+  padding: 10px 10px;
   text-align: center;
 }
 .govuk-table__row.bg th:first-of-type,
@@ -59,9 +59,11 @@
 
 // ***Internal app styles dont upload till nunjucks fixed ***
 
-.govuk-template__body.internal {
+.govuk-template__body.internal.js-enabled {
   margin: 0;
   background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 .internal {
   .govuk-header {
