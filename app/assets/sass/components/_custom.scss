@@ -57,8 +57,6 @@
   padding: 10px;
 }
 
-// ***Internal app styles dont upload till nunjucks fixed ***
-
 .govuk-template{
   background-color: white; 
 }
@@ -100,4 +98,18 @@
   .govuk-tabs__tab--selected {
     background-color: white;
   }
+}
+
+
+// *** login ***
+.loginSection{
+  float: right;
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 60px;
+  clear: none;
+  margin-top: -53px;
+  text-align: right;
+  line-height: 60px;
 }
