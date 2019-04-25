@@ -98,13 +98,16 @@
   .govuk-tabs__tab--selected {
     background-color: white;
   }
+  .govuk-header__logotype-text{
+    display: none;
+  }
 }
 
 
-// *** login ***
+// *** header ***
 .loginSection{
   float: right;
-  display: inline-block;
+  display: block;
   position: relative;
   width: 300px;
   height: 60px;
@@ -112,4 +115,13 @@
   margin-top: -53px;
   text-align: right;
   line-height: 60px;
+}
+.eaLogo{
+  background-image: url("../images/EA_logo.jpg");
+  width: 157px;
+  height: 55px;
+  background-size: contain;
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
 }
