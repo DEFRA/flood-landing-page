@@ -57,19 +57,20 @@
   padding: 10px;
 }
 
-// ***Internal app styles dont upload till nunjucks fixed ***
+.govuk-template{
+  background-color: white; 
+}
 
 .govuk-template__body.internal.js-enabled {
   margin: 0;
   background-color: #f3f3f3;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 .internal {
   .govuk-header {
     color: #454a4c;
     background: #ffffff;
-    border-bottom: 3px solid #005ea5;
+    border-bottom: 3px solid #00823b;
     padding-bottom: 15px;
   }
   .govuk-header__link:link,
@@ -81,7 +82,7 @@
     border-bottom: none;
   }
   .govuk-footer {
-    border-top: 2px solid #005ea5;
+    border-top: 2px solid #00823b;
     color: #454a4c;
     background: #ffffff;
   }
@@ -89,7 +90,7 @@
     background: #ffffff;
   }
   .govuk-inset-text {
-    border-left: 10px solid #005ea5;
+    border-left: 10px solid #00823b;
   }
   .govuk-tabs__tab {
     background-color: inherit;
@@ -97,4 +98,30 @@
   .govuk-tabs__tab--selected {
     background-color: white;
   }
+  .govuk-header__logotype-text{
+    display: none;
+  }
+}
+
+
+// *** header ***
+.loginSection{
+  float: right;
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 60px;
+  clear: none;
+  margin-top: -53px;
+  text-align: right;
+  line-height: 60px;
+}
+.eaLogo{
+  background-image: url("../images/ealogo.png");
+  width: 157px;
+  height: 55px;
+  background-size: contain;
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
 }

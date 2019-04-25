@@ -70,7 +70,7 @@
   .govuk-header {
     color: #454a4c;
     background: #ffffff;
-    border-bottom: 3px solid #005ea5;
+    border-bottom: 3px solid #00823b;
     padding-bottom: 15px;
   }
   .govuk-header__link:link,
@@ -82,7 +82,7 @@
     border-bottom: none;
   }
   .govuk-footer {
-    border-top: 2px solid #005ea5;
+    border-top: 2px solid #00823b;
     color: #454a4c;
     background: #ffffff;
   }
@@ -90,7 +90,11 @@
     background: #ffffff;
   }
   .govuk-inset-text {
-    border-left: 10px solid #005ea5;
+    border-left: 10px solid #00823b;
+  }
+  .devider{
+    color: #00823b; 
+    font-weight: bold;
   }
   .govuk-tabs__tab {
     background-color: inherit;
@@ -112,14 +116,13 @@
   width: 300px;
   height: 60px;
   clear: none;
-  margin-top: -53px;
   text-align: right;
   line-height: 60px;
 }
 .eaLogo{
-  background-image: url("../images/EA_logo.jpg");
-  width: 157px;
-  height: 55px;
+  background-image: url("../images/ealogo.png");
+  width: 200px;
+  height: 60px;
   background-size: contain;
   display: inline-block;
   position: relative;
