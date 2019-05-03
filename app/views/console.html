@@ -1,5 +1,5 @@
 {% extends "layout_unbranded.html" %} {% set bodyClasses = "internal" %} {%
-block pageTitle %} GOV.UK Flood Digital Managment Console Mockup {% endblock %}
+block pageTitle %} GOV.UK Flood Digital Management Console Mockup {% endblock %}
 {% block head %}
 <link
   href="/public/stylesheets/unbranded.css"
@@ -25,7 +25,7 @@ block pageTitle %} GOV.UK Flood Digital Managment Console Mockup {% endblock %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
     <h2 class="govuk-heading-l">
-      Flood Digital Managment Console - Mockup V0.81
+      Flood Digital Management Console - Mockup V0.9
     </h2>
     <div class="govuk-inset-text">
       This Information was last updated: 05/04/2019 - 14:53PM GMT
@@ -70,11 +70,17 @@ block pageTitle %} GOV.UK Flood Digital Managment Console Mockup {% endblock %}
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row bg">
-              <th class="govuk-table__header" scope="col">Area</th>
-              <th class="govuk-table__header" scope="col">Alerts</th>
-              <th class="govuk-table__header" scope="col">Warnings</th>
-              <th class="govuk-table__header" scope="col">Severe Warnings</th>
-              <th class="govuk-table__header" scope="col">Not Enforced</th>
+              <th class="govuk-table__header" scope="col">
+                Enviroment Agency Area
+              </th>
+              <th class="govuk-table__header" scope="col">Flood Alerts</th>
+              <th class="govuk-table__header" scope="col">Flood Warnings</th>
+              <th class="govuk-table__header" scope="col">
+                Severe Flood Warnings
+              </th>
+              <th class="govuk-table__header" scope="col">
+                Warning No Longer In Force
+              </th>
               <th class="govuk-table__header" scope="col">Total</th>
             </tr>
           </thead>
@@ -122,82 +128,149 @@ block pageTitle %} GOV.UK Flood Digital Managment Console Mockup {% endblock %}
           <thead class="govuk-table__head">
             <tr class="govuk-table__row bg">
               <th class="govuk-table__header" scope="col">
-                Cumbria And Lancashire
+               Cumbria And Lancashire
               </th>
+              <th class="govuk-table__header center" scope="col"></th>
               <th class="govuk-table__header center" scope="col">Total</th>
               <th class="govuk-table__header" scope="col">Local Area Name</th>
+              <th class="govuk-table__header" scope="col">Warning Area Code</th>
               <th class="govuk-table__header" scope="col">Last Changed</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\SevereFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Severe Flood Warnings</td>
               <td class="govuk-table__cell center">3</td>
               <td class="govuk-table__cell">
                 Appleby <br />Holme and Chapel street <br />Cherry Row
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:34</td>
             </tr>
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\LessSevereFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Flood Warnings</td>
               <td class="govuk-table__cell center">3</td>
               <td class="govuk-table__cell">
                 Keswick Campsite<br />Elliot Park at Keswick <br />Coast at
                 Cockerham
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:32</td>
             </tr>
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\mediumFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Flood Alerts</td>
               <td class="govuk-table__cell center">2</td>
               <td class="govuk-table__cell">
                 Coast from Cockermouth to Fleetwood<br />Coast from St Bees Head
                 to Millom
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:25</td>
             </tr>
             <tr class="govuk-table__row last">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\NoRiskFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">No Longer in Force</td>
-              <td class="govuk-table__cell center">0</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell center">1</td>
+              <td class="govuk-table__cell">Coast from St Bees Head to Preston Rd</td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:15</td>
             </tr>
             <tr class="govuk-table__row bg">
               <th class="govuk-table__header" scope="col">Merseyside</th>
               <th class="govuk-table__header center" scope="col">Total</th>
               <th class="govuk-table__header" scope="col">Local Area Name</th>
+              <th class="govuk-table__header" scope="col">Warning Area Code</th>
               <th class="govuk-table__header" scope="col">Last Changed</th>
             </tr>
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\SevereFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Severe Flood Warnings</td>
               <td class="govuk-table__cell center">3</td>
               <td class="govuk-table__cell">
                 Appleby <br />Holme and Chapel street <br />Cherry Row
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:34</td>
             </tr>
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\LessSevereFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Flood Warnings</td>
               <td class="govuk-table__cell center">3</td>
               <td class="govuk-table__cell">
                 Keswick Campsite<br />Elliot Park at Keswick <br />Coast at
                 Cockerham
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:32</td>
             </tr>
-            <tr class="govuk-table__row">
+            <tr class="govuk-table__row">\
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\mediumFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Flood Alerts</td>
               <td class="govuk-table__cell center">2</td>
               <td class="govuk-table__cell">
                 Coast from Cockermouth to Fleetwood<br />Coast from St Bees Head
                 to Millom
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:25</td>
             </tr>
             <tr class="govuk-table__row last">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\NoRiskFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">No Longer in Force</td>
-              <td class="govuk-table__cell center">0</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell center">1</td>
+              <td class="govuk-table__cell">Coast from St Bees Head to Preston Rd</td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:15</td>
             </tr>
             <tr class="govuk-table__row bg">
@@ -206,38 +279,71 @@ block pageTitle %} GOV.UK Flood Digital Managment Console Mockup {% endblock %}
               </th>
               <th class="govuk-table__header" scope="col">Total</th>
               <th class="govuk-table__header" scope="col">Local Area Name</th>
+              <th class="govuk-table__header" scope="col">Warning Area Code</th>
               <th class="govuk-table__header" scope="col">Last Changed</th>
             </tr>
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\SevereFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Severe Flood Warnings</td>
               <td class="govuk-table__cell center">3</td>
               <td class="govuk-table__cell">
                 Appleby <br />Holme and Chapel street <br />Cherry Row
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:34</td>
             </tr>
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\LessSevereFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Flood Warnings</td>
               <td class="govuk-table__cell center">3</td>
               <td class="govuk-table__cell">
                 Keswick Campsite<br />Elliot Park at Keswick <br />Coast at
                 Cockerham
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:32</td>
             </tr>
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\mediumFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Flood Alerts</td>
               <td class="govuk-table__cell center">2</td>
               <td class="govuk-table__cell">
                 Coast from Cockermouth to Fleetwood<br />Coast from St Bees Head
                 to Millom
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:25</td>
             </tr>
             <tr class="govuk-table__row last">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\NoRiskFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">No Longer in Force</td>
-              <td class="govuk-table__cell center">0</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell center">1</td>
+              <td class="govuk-table__cell">Coast from St Bees Head to Preston Rd</td>
+                            <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:15</td>
             </tr>
           </tbody>
@@ -255,42 +361,76 @@ block pageTitle %} GOV.UK Flood Digital Managment Console Mockup {% endblock %}
               <th class="govuk-table__header" scope="col">
                 Cumbria And Lancashire
               </th>
+              <th class="govuk-table__header" scope="col"></th>
               <th class="govuk-table__header center" scope="col">Total</th>
               <th class="govuk-table__header" scope="col">Local Area Name</th>
+              <th class="govuk-table__header" scope="col">Warning Area Code</th>
               <th class="govuk-table__header" scope="col">Last Changed</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\SevereFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Severe Flood Warnings</td>
               <td class="govuk-table__cell">3</td>
               <td class="govuk-table__cell">
                 Appleby <br />Holme and Chapel street <br />Cherry Row
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:34</td>
             </tr>
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\LessSevereFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Flood Warnings</td>
               <td class="govuk-table__cell">3</td>
               <td class="govuk-table__cell">
                 Keswick Campsite<br />Elliot Park at Keswick <br />Coast at
                 Cockerham
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:32</td>
             </tr>
             <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\mediumFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">Flood Alerts</td>
               <td class="govuk-table__cell">2</td>
               <td class="govuk-table__cell">
                 Coast from Cockermouth to Fleetwood<br />Coast from St Bees Head
                 to Millom
               </td>
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:25</td>
             </tr>
             <tr class="govuk-table__row last">
+                <td class="govuk-table__cell">
+                    <img
+                      src="\..\public\images\NoRiskFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                  </td>
               <td class="govuk-table__cell">No Longer in Force</td>
-              <td class="govuk-table__cell">0</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">Coast from St Bees Head to Preston Rd</td>  
+              <td class="govuk-table__cell center">123456</td>
               <td class="govuk-table__cell">04/03/2019 - 22:15</td>
             </tr>
           </tbody>
@@ -402,10 +542,10 @@ block pageTitle %} GOV.UK Flood Digital Managment Console Mockup {% endblock %}
           <thead class="govuk-table__head">
             <tr class="govuk-table__row noborder">
               <th class="govuk-table__header noborder" scope="col">
-                Search Query
+                Search
               </th>
               <th class="govuk-table__header noborder" scope="col">
-                Geographical Area
+                Enviroment Agency Area
               </th>
             </tr>
           </thead>
@@ -422,6 +562,7 @@ block pageTitle %} GOV.UK Flood Digital Managment Console Mockup {% endblock %}
               </td>
               <td class="govuk-table__cell noborder half">
                 <select class="govuk-select custom" id="sort" name="sort">
+                  <option value="updated" selected>All</option>
                   <option value="updated" selected>Cumbria & Lancashire</option>
                   <option value="published">Shropshire & Herefordshire </option>
                   <option value="views"
@@ -441,42 +582,76 @@ block pageTitle %} GOV.UK Flood Digital Managment Console Mockup {% endblock %}
           <thead class="govuk-table__head">
             <tr class="govuk-table__row bg">
               <th class="govuk-table__header" scope="col">Preston</th>
+              <th class="govuk-table__header" scope="col"></th>
               <th class="govuk-table__header center" scope="col">Total</th>
               <th class="govuk-table__header" scope="col">Local Area Name</th>
+              <th class="govuk-table__header" scope="col">Warning Area Code</th>
               <th class="govuk-table__header" scope="col">Last Changed</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <img
+                  src="\..\public\images\severeFlood.png"
+                  class="floodingIcons"
+                  alt="FloodingIcon"
+                /><img />
+              </td>
               <td class="govuk-table__cell">Severe Flood Warnings</td>
               <td class="govuk-table__cell">2</td>
               <td class="govuk-table__cell">
                 Prestonby <br />Holme and Chapel street
               </td>
+              <td class="govuk-table__cell">0123456</td>
               <td class="govuk-table__cell">04/03/2019 - 16:34</td>
             </tr>
             <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <img
+                  src="\..\public\images\LessSevereFlood.png"
+                  class="floodingIcons"
+                  alt="FloodingIcon"
+                /><img />
+              </td>
               <td class="govuk-table__cell">Flood Warnings</td>
               <td class="govuk-table__cell">2</td>
               <td class="govuk-table__cell">
                 Preston Campsite<br />Elliot Park at Preston
               </td>
+              <td class="govuk-table__cell">0123456</td>
               <td class="govuk-table__cell">04/03/2019 - 14:32</td>
             </tr>
             <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <img
+                  src="\..\public\images\lowRiskFlood.png"
+                  class="floodingIcons"
+                  alt="FloodingIcon"
+                /><img />
+              </td>
               <td class="govuk-table__cell">Flood Alerts</td>
               <td class="govuk-table__cell">2</td>
               <td class="govuk-table__cell">
                 Coast from Cockermouth to Preston Rd<br />Coast at Preston
               </td>
+              <td class="govuk-table__cell">0123456</td>
               <td class="govuk-table__cell">04/03/2019 - 11:25</td>
             </tr>
             <tr class="govuk-table__row last">
+              <td class="govuk-table__cell">
+                <img
+                  src="\..\public\images\noRiskFlood.png"
+                  class="floodingIcons"
+                  alt="FloodingIcon"
+                /><img />
+              </td>
               <td class="govuk-table__cell">No Longer in Force</td>
               <td class="govuk-table__cell">1</td>
               <td class="govuk-table__cell">
                 Coast from St Bees Head to Preston Rd
               </td>
+              <td class="govuk-table__cell">0123456</td>
               <td class="govuk-table__cell">04/03/2019 - 09:15</td>
             </tr>
           </tbody>
@@ -485,28 +660,48 @@ block pageTitle %} GOV.UK Flood Digital Managment Console Mockup {% endblock %}
     </div>
   </div>
 </div>
-
-{% endblock %}
-
-{% block footer %}
+For help and information please contact:
+<a href="mailto:wandlsupport@Enviroment-agency.gov.uk"
+  >wandisupport@enviroment-agency.gov.uk</a
+>
+{% endblock %} {% block footer %}
 
 <footer class="govuk-footer " role="contentinfo">
   <div class="govuk-width-container ">
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-
-        <svg role="presentation" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 483.2 195.7" height="17" width="41">
-          <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewbox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
         </svg>
         <span class="govuk-footer__licence-description">
           All content is available under the
-          <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+            >Open Government Licence v3.0</a
+          >, except where otherwise stated
         </span>
       </div>
       <div class="govuk-footer__meta-item">
-        <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+          >© Crown copyright</a
+        >
       </div>
     </div>
   </div>
 </footer>
-{% endblock %} 
+{% endblock %}
