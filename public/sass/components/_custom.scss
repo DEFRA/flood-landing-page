@@ -6,7 +6,9 @@
 .govuk-grid-column-one-third{
 width: 50%; 
 }
-
+.floodingIcons{
+  width: 50px; 
+}
 .govuk-inset-text.flood{
   border-left: 5px solid #28a197;
   clear: none;
@@ -29,6 +31,8 @@ width: 50%;
   width: 85px;
   margin-top: 2px;
   margin-left: 15px;
+  border-right: 2px solid white;
+  padding-right: 30px;
 }
 .floodImage2{
   position: relative;
@@ -51,11 +55,8 @@ width: 50%;
   width: 50%;
 }
 
-.govuk-table__row.bg {
-  background-color: #f3f3f3;
-}
+
 .govuk-table__cell a {
-  color: black;
   text-decoration: none;
 }
 .govuk-table__cell.center,
@@ -77,8 +78,8 @@ width: 50%;
   padding: 10px 10px;
   text-align: center;
 }
-.govuk-table__row.bg th:first-of-type,
-.govuk-table__row td:first-of-type {
+.govuk-table__row.bg th:nth-child(2),
+.govuk-table__row td:nth-child(2) {
   text-align: left;
 }
 
@@ -89,6 +90,8 @@ width: 50%;
 .govuk-template{
   background-color: white; 
 }
+
+
 
 .govuk-template__body.internal.js-enabled {
   margin: 0;
