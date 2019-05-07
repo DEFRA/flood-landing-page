@@ -14,6 +14,22 @@ width: 50%;
   clear: none;
   margin-left: 70px;  
 }
+
+.govuk-button.center{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.govuk-button.right{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  position: relative;
+}
 // **********************
 
 
