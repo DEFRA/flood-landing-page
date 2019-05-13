@@ -1,5 +1,32 @@
 // **** Panels ****
 
+.iconsTable{
+  width: 100.7%;
+  position: relative;
+  margin-top: -15px;
+  margin-left: -2px;
+  td{
+    background:#dee0e2; 
+    padding-top: 10px;
+    padding-bottom:10px;
+    text-align: center; 
+    &:hover{
+      background-color: #caccce; 
+      cursor: pointer;
+    }
+  }
+  .floodIcons{
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    display: none; 
+  }
+  a{
+    text-decoration: none; 
+  }
+}
+
 .govuk-width-container{
   max-width: 1280px;
 }
@@ -51,8 +78,8 @@ width: 50%;
   width: 85px;
   margin-top: 2px;
   margin-left: 15px;
-  border-right: 2px solid white;
-  padding-right: 30px;
+  // border-right: 1px solid white;
+  // padding-right: 30px;
 }
 .floodImage2{
   position: relative;

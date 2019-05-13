@@ -15,14 +15,13 @@ Landing Page {% endblock %} {% block content %}
 </div>
 
 <div class="govuk-grid-row">
-  
   <div class="govuk-grid-column-one-third">
-      <img
+    <img
       src="\..\public\images\taxonimy.png"
       class="taxonimy"
       alt="Larry the cat, Chief Mouser to the Cabinet Office, sitting on a meeting table wearing a Union Jack bowtie."
     />
-  <img> 
+    <img />
   </div>
   <div class="govuk-grid-column-one-third">
     <h1 class="govuk-heading-l">
@@ -30,7 +29,7 @@ Landing Page {% endblock %} {% block content %}
     </h1>
     <!-- </h1>{{releaseVersion | log }} -->
 
-      <!-- ************ v2 **************** -->
+    <!-- ************ v2 **************** -->
 
     <!-- <img
         src="\..\public\images\flood.png"
@@ -40,8 +39,7 @@ Landing Page {% endblock %} {% block content %}
     <div class="govuk-inset-text flood">
         LIVE FLOOD WARNINGS - Check the latest information <a href="#">HERE</a>
       </div> -->
-      <!-- ************ v2 **************** -->
-
+    <!-- ************ v2 **************** -->
 
     <div class="govuk-panel govuk-panel--confirmation">
       <img
@@ -57,9 +55,35 @@ Landing Page {% endblock %} {% block content %}
         <br />
       </div>
     </div>
-      <!-- *************** V1 ************ -->
+    <!-- *************** V1 ************ -->
 
-    <ul class="govuk-list govuk-list--bullet">
+    <table class="iconsTable">
+      <tbody>
+        <tr>
+          <td>
+            <img
+              src="\..\public\images\floodicon.png"
+              class="floodIcons"
+              alt="Larry the cat, Chief Mouser to the Cabinet Office, sitting on a meeting table wearing a Union Jack bowtie."
+            />
+            <a class="govuk-link" href="#">Flooding activity permitting</a>
+          </td>
+          <td><a class="govuk-link" href="#">Flooding risk map</a></td>
+        </tr>
+        <tr>
+          <td><a class="govuk-link" href="#">Coastal change</a></td>
+          <td><a class="govuk-link" href="#">Preparing for flooding</a></td>
+        </tr>
+        <tr>
+          <td><a class="govuk-link" href="#">Sign up for flood warnings</a></td>
+          <td><a class="govuk-link" href="#">Sign up for flood warnings</a></td>
+        </tr>
+        <tr></tr>
+      </tbody>
+    </table>
+    <!-- DivTable.com -->
+
+    <!-- <ul class="govuk-list govuk-list--bullet">
            
         <td class="govuk-table__cell">
             <li>
@@ -80,13 +104,13 @@ Landing Page {% endblock %} {% block content %}
               <a class="govuk-link" href="#">Sign up for flood warnings</a>
             </li>
           </td>
-        </ul>
-        <p>
-            <br />
-            Please select a topic from the below headings to view the relative
-            guidance, quick-links to the most commonly viewed topics and live flood
-            warnings are available above.
-          </p>
+        </ul> -->
+    <p>
+      <br />
+      Please select a topic from the below headings to view the relative
+      guidance, quick-links to the most commonly viewed topics and live flood
+      warnings are available above.
+    </p>
 
     <div class="govuk-accordion" data-module="accordion" id="accordion-default">
       <div class="govuk-accordion__section ">
@@ -315,7 +339,7 @@ Landing Page {% endblock %} {% block content %}
       </div>
     </div>
   </div>
-  <span style="display: block; text-align: center;"><b>V2.01</b></span>
+  <span style="display: block; text-align: center;"><b>V2.02</b></span>
 </div>
 
 {% endblock %}

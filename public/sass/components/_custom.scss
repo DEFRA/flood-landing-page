@@ -1,5 +1,22 @@
 // **** Panels ****
 
+.iconsTable{
+  width: 100%; 
+  position: relative;
+  td{
+    background:#dee0e2; 
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 50px;
+  }
+  .floodIcons{
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
+}
+
 .govuk-width-container{
   max-width: 1280px;
 }
