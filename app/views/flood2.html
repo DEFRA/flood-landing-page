@@ -15,22 +15,21 @@ Landing Page {% endblock %} {% block content %}
 </div>
 
 <div class="govuk-grid-row">
-  
   <div class="govuk-grid-column-one-third">
-      <img
+    <img
       src="\..\public\images\taxonimy.png"
       class="taxonimy"
       alt="Larry the cat, Chief Mouser to the Cabinet Office, sitting on a meeting table wearing a Union Jack bowtie."
     />
-  <img> 
+    <img />
   </div>
   <div class="govuk-grid-column-one-third">
     <h1 class="govuk-heading-l">
-      Flooding and Extreme Weather
+      Flooding Dashboard
     </h1>
     <!-- </h1>{{releaseVersion | log }} -->
 
-      <!-- ************ v2 **************** -->
+    <!-- ************ v2 **************** -->
 
     <!-- <img
         src="\..\public\images\flood.png"
@@ -40,8 +39,7 @@ Landing Page {% endblock %} {% block content %}
     <div class="govuk-inset-text flood">
         LIVE FLOOD WARNINGS - Check the latest information <a href="#">HERE</a>
       </div> -->
-      <!-- ************ v2 **************** -->
-
+    <!-- ************ v2 **************** -->
 
     <div class="govuk-panel govuk-panel--confirmation">
       <img
@@ -53,16 +51,57 @@ Landing Page {% endblock %} {% block content %}
         LIVE FLOOD WARNINGS
       </h1>
       <div class="govuk-panel__body">
-        Check the Latest Information Here
-        <br />
+        Click here for the latest information <br />
       </div>
     </div>
-      <!-- *************** V1 ************ -->
+    <!-- *************** V1 ************ -->
+
+    <table class="iconsTable">
+      <tbody>
+        <tr>
+          <td>
+            <img
+              src="\..\public\images\floodicon.png"
+              class="floodIcons"
+              alt="Larry the cat, Chief Mouser to the Cabinet Office, sitting on a meeting table wearing a Union Jack bowtie."
+            />
+            <a
+              class="govuk-link"
+              href="https://www.gov.uk/guidance/flood-risk-activities-environmental-permits"
+              >Flooding activity permitting</a
+            >
+          </td>
+          <td>
+            <a
+              class="govuk-link"
+              href="https://www.gov.uk/sign-up-for-flood-warnings"
+              >Sign up for flood warnings</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              class="govuk-link"
+              href="https://flood-warning-information.service.gov.uk/long-term-flood-risk"
+              >Flooding Risk Map</a
+            >
+          </td>
+          <td>
+            <a class="govuk-link" href="https://www.gov.uk/prepare-for-flooding"
+              >Preparing for flooding</a
+            >
+          </td>
+        </tr>
+        <tr></tr>
+      </tbody>
+    </table>
+    <!-- DivTable.com -->
 
     <!-- <ul class="govuk-list govuk-list--bullet">
            
-          
-          <li>
+        <td class="govuk-table__cell">
+            <li>
             <a class="govuk-link" href="#">Flooding risk map</a>
           </li>
           <li>
@@ -71,19 +110,22 @@ Landing Page {% endblock %} {% block content %}
           <li>
               <a class="govuk-link" href="#">Coastal change</a>
           </li>
+      </td>
+      <td class="govuk-table__cell">
           <li>
             <a class="govuk-link" href="#">Preparing for flooding</a>
           </li>
           <li>
               <a class="govuk-link" href="#">Sign up for flood warnings</a>
             </li>
+          </td>
         </ul> -->
-        <p>
-            <br />
-            Please select a topic from the below headings to view the relative
-            guidance, quick-links to the most commonly viewed topics and live flood
-            warnings are available at the right hand side of this page.
-          </p>
+    <p>
+      <br />
+      Please select a topic from the below headings to view the relative
+      guidance, quick-links to the most commonly viewed topics and live flood
+      warnings are available above.
+    </p>
 
     <div class="govuk-accordion" data-module="accordion" id="accordion-default">
       <div class="govuk-accordion__section ">
@@ -93,7 +135,7 @@ Landing Page {% endblock %} {% block content %}
               class="govuk-accordion__section-button"
               id="accordion-default-heading-1"
             >
-              Checking your flood risk
+              Checking your immediate flood risk
             </span>
           </h2>
         </div>
@@ -124,18 +166,6 @@ Landing Page {% endblock %} {% block content %}
               >
             </li>
             <li>
-              <a
-                class="govuk-link"
-                href="https://www.gov.uk/prepare-for-flooding"
-                >Preparing for flooding</a
-              >
-            </li>
-            <li>
-              <a class="govuk-link" href="https://www.gov.uk/after-flood"
-                >Find out what to do before, during, or after a flood</a
-              >
-            </li>
-            <li>
               <a class="govuk-link" href="https://www.gov.uk/report-flood-cause"
                 >Sign up for flood warnings</a
               >
@@ -146,6 +176,50 @@ Landing Page {% endblock %} {% block content %}
           </ul>
         </div>
       </div>
+
+      <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span
+                class="govuk-accordion__section-button"
+                id="accordion-default-heading-1"
+              >
+                What to do if your at flood risk
+              </span>
+            </h2>
+          </div>
+          <!-- <p>Immediate emergency actions and guidance</p> -->
+          <div
+            id="accordion-default-content-1"
+            class="govuk-accordion__section-content"
+            aria-labelledby="accordion-default-heading-1"
+          >
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a
+                  class="govuk-link"
+                  href="https://www.gov.uk/prepare-for-flooding"
+                  >Preparing for flooding</a
+                >
+              </li>
+              <li>
+                  <a
+                    class="govuk-link"
+                    href="https://www.gov.uk/prepare-for-flooding/future-flooding"
+                    >Protecting yourself and your property from flooding</a
+                  >
+                </li>
+              <li>
+                <a class="govuk-link" href="https://www.gov.uk/after-flood"
+                  >Find out what to after a flood</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
       <div class="govuk-accordion__section ">
         <div class="govuk-accordion__section-header">
           <h2 class="govuk-accordion__section-heading">
@@ -153,7 +227,7 @@ Landing Page {% endblock %} {% block content %}
               class="govuk-accordion__section-button"
               id="accordion-default-heading-2"
             >
-              Getting a property flood report
+              Checking your future flood or erosion risk
             </span>
           </h2>
         </div>
@@ -173,8 +247,8 @@ Landing Page {% endblock %} {% block content %}
             <li>
               <a
                 class="govuk-link"
-                href="https://environment.data.gov.uk/asset-management/index.html"
-                >Capital and maintenance programmes</a
+                href="https://www.gov.uk/check-plans-to-stop-coastal-erosion-in-your-area"
+                >Check shoreline management plans</a
               >
             </li>
           </ul>
@@ -200,6 +274,13 @@ Landing Page {% endblock %} {% block content %}
             <li>
               <a
                 class="govuk-link"
+                href="https://environment.maps.arcgis.com/apps/webappviewer/index.html?id=17cd53dfc524433980cc333726a56386"
+                >Who regulates my river/watercourse</a
+              >
+            </li>
+            <li>
+              <a
+                class="govuk-link"
                 href="https://flood-map-for-planning.service.gov.uk/"
                 >Building in a flood zone</a
               >
@@ -211,32 +292,53 @@ Landing Page {% endblock %} {% block content %}
                 >Work in/over/near a river or flood defence</a
               >
             </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span
+              class="govuk-accordion__section-button"
+              id="accordion-default-heading-4"
+            >
+              Managing flood risk
+            </span>
+          </h2>
+        </div>
+        <div
+          id="accordion-default-content-4"
+          class="govuk-accordion__section-content"
+          aria-labelledby="accordion-default-heading-4"
+        >
+          <ul class="govuk-list govuk-list--bullet">
             <li>
               <a
                 class="govuk-link"
-                href="https://www.gov.uk/check-plans-to-stop-coastal-erosion-in-your-area"
-                >checking shoreline management or flood risk regulation maps</a
+                href="https://environment.data.gov.uk/asset-management/index.html"
+                >Capital and maintenance programmes</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="govuk-link"
+                href="https://www.gov.uk/guidance/flood-and-coastal-defence-funding-submit-a-project"
+                >Local authority funding services</a
               >
             </li>
             <li>
               <a class="govuk-link" href="#"
-                >Local authority funding services (PAFS) flood defence
-                funding(?)</a
+                >Measures to manage flood risk
+                <!-- (? - other sam J brown - needs renaming flood planning explorer) -->
+                </a
               >
-            </li>
-            <li>
-              <a
-                class="govuk-link"
-                href="https://environment.maps.arcgis.com/apps/webappviewer/index.html?id=17cd53dfc524433980cc333726a56386"
-                >Main river digital map</a
-              >
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Flood planning explorer</a>
             </li>
           </ul>
         </div>
       </div>
+
       <div class="govuk-accordion__section ">
         <div class="govuk-accordion__section-header">
           <h2 class="govuk-accordion__section-heading">
@@ -264,7 +366,7 @@ Landing Page {% endblock %} {% block content %}
               <a
                 class="govuk-link"
                 href="http://evidence.environment-agency.gov.uk/FCERM/en/Default/FCRM/Search.aspx"
-                >Recruiting for user uesearch</a
+                >Recruiting for user research</a
               >
             </li>
             <li>
@@ -278,7 +380,7 @@ Landing Page {% endblock %} {% block content %}
               <a
                 class="govuk-link"
                 href="https://www.gov.uk/government/publications/working-with-natural-processes-to-reduce-flood-risk"
-                >Natural flood management</a
+                >Natural flood management research</a
               >
             </li>
           </ul>
@@ -291,8 +393,7 @@ Landing Page {% endblock %} {% block content %}
               class="govuk-accordion__section-button"
               id="accordion-default-heading-4"
             >
-              Strategy and guidance
-            </span>
+Flood strategy            </span>
           </h2>
         </div>
         <div
@@ -301,18 +402,15 @@ Landing Page {% endblock %} {% block content %}
           aria-labelledby="accordion-default-heading-4"
         >
           <ul class="govuk-list govuk-list--bullet">
-            <li>
-              <a class="govuk-link" href="#">FCERM admin tools(?)</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Management(?)</a>
-            </li>
+              <li>
+                  <a class="govuk-link" href="https://consult.environment-agency.gov.uk/fcrm/national-strategy-internal/">Flood and coastal erosion management risk strategy</a>
+                </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <span style="display: block; text-align: center;"><b>V2.01</b></span>
+  <span style="display: block; text-align: center;"><b>V2.1</b></span>
 </div>
 
 {% endblock %}
