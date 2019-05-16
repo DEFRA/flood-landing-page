@@ -1,0 +1,163 @@
+{% extends "layout_unbranded.html" %} {% set bodyClasses = "internal" %} {%
+block pageTitle %} GOV.UK Flood Digital Management Console Mockup {% endblock %}
+{% block head %}
+<link
+  href="/public/stylesheets/unbranded.css"
+  media="all"
+  rel="stylesheet"
+  type="text/css"
+/>
+{% endblock %} {% block header %}
+<header class="govuk-header " role="banner" data-module="header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__logo">
+      <a href="#" class="govuk-header__link govuk-header__link--homepage">
+        <div class="eaLogo"></div>
+      </a>
+    </div>
+    <span class="loginSection">
+      <b>Richie Graham - Duty Officer</b> <span class="devider">|</span> <a href="#">Logout</a>
+    </span>
+  </div>
+</header>
+{% endblock %} {% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-l">
+Chapel and Holm Street - (TA V1.01)    </h2>
+  
+
+
+<!-- ******** CONTENT *********** -->
+
+<div class="grid-row">
+
+    <div class="column-full white">
+        <h2 class="heading-large">Current Warning</h2>
+        <table class="govuk-table">
+            <tr class="govuk-table__row bg">
+                <th class="govuk-table__header" scope="col">Severity</th>
+                <th class="govuk-table__header" scope="col">Description</th>
+                <th class="govuk-table__header" scope="col">Last Changed</th>
+              </tr>
+            <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                  <img
+                  src="\..\public\images\SevereFlood.png"
+                  class="floodingIcons"
+                  alt="FloodingIcon"
+                /><img />
+                Severe Flood Warning</td>
+              <td class="govuk-table__cell">We've been forsaken...Find somebody called Noah who has boat skills and <br> break out your zombie apocolypse masterplan, <br> mabey head to the Winchester and wait for this to all blow over?</td> 
+              <td class="govuk-table__cell">Wednesday, 8 May 2019 - 22:34</td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit" class="govuk-button center" href="#">
+            Edit
+          </button>
+      </div>
+
+
+      <!-- ***** Historic warnings **** -->
+
+
+      <div class="column-full white">
+          <h2 class="heading-large">Historic Warnings</h2>
+          <table class="govuk-table">
+              <tr class="govuk-table__row bg">
+                  <th class="govuk-table__header" scope="col">Severity</th>
+                  <th class="govuk-table__header" scope="col">Description</th>
+                  <th class="govuk-table__header" scope="col">Last Changed</th>
+                </tr>
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <img
+                    src="\..\public\images\MediumFlood.png"
+                    class="floodingIcons"
+                    alt="FloodingIcon"
+                  /><img />
+                  Medium Flood Warning</td>
+                <td class="govuk-table__cell">Its really rather moody outside, begin pillaging the forests for materials</td> 
+                <td class="govuk-table__cell">Wednesday, 8 May 2019 - 17:54</td>
+              </tr>
+              <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                      <img
+                      src="\..\public\images\LowRiskFlood.png"
+                      class="floodingIcons"
+                      alt="FloodingIcon"
+                    /><img />
+                    Low Risk Flood Warning</td>
+                  <td class="govuk-table__cell">It's raining a bit, begin choosing which family members you like the most,<br>just incase</td> 
+                  <td class="govuk-table__cell">Wednesday, 8 May 2019 - 14:24</td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">
+                        <img
+                        src="\..\public\images\NoRiskFlood.png"
+                        class="floodingIcons"
+                        alt="FloodingIcon"
+                      /><img />
+                      No Flood Warning</td>
+                    <td class="govuk-table__cell">It's cloudy, chance of Meatballs...</td> 
+                    <td class="govuk-table__cell">Wednesday, 8 May 2019 - 11:24</td>
+                  </tr>
+            </tbody>
+          </table>
+        </div>
+  
+  </div>
+
+
+
+
+
+For help and information please contact:
+<a href="mailto:wandlsupport@Enviroment-agency.gov.uk"
+  >wandisupport@enviroment-agency.gov.uk</a
+>
+{% endblock %} {% block footer %}
+
+<footer class="govuk-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewbox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+            >Open Government Licence v3.0</a
+          >, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+          >© Crown copyright</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}
