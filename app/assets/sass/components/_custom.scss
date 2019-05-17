@@ -25,6 +25,10 @@
   a{
     text-decoration: none; 
   }
+  
+}
+.customTextArea{
+width:500px;
 }
 .govuk-panel--confirmation:hover{
   background:#228c83;
@@ -65,6 +69,11 @@ width: 50%;
   padding-left: 15px;
   padding-right: 15px;
 }
+.govuk-button.center.middle{
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
 .govuk-button.right{
   display: block;
   text-align: center;
@@ -120,6 +129,7 @@ width: 50%;
 .govuk-table__header.center {
   text-align: center;
 }
+
 .govuk-table{
   font-size: 0.96em; 
 }
