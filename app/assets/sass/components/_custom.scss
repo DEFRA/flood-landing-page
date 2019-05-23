@@ -150,6 +150,13 @@ width: 50%;
 .govuk-table__row{
   height: 100px; 
   line-height: 1.6em; 
+  &.bold{
+    font-weight: bold; 
+  }
+}
+.govuk-table__cell.bold{
+  font-weight: bold; 
+
 }
 .govuk-table__row.bg{
   height: 50px; 
@@ -159,10 +166,12 @@ width: 50%;
 .govuk-table__row.bg th:nth-child(1),
 .govuk-table__row td:nth-child(1) {
   text-align: left;
+  width: 30%
 }
 
 .govuk-table__cell {
   padding: 10px;
+  width: 14%; 
 }
 
 .govuk-template{
