@@ -92,10 +92,9 @@
 .floodImage {
   float: left;
   width: 85px;
-  margin-top: 2px;
+  margin-top: 20px;
   margin-left: 15px;
-  // border-right: 1px solid white;
-  // padding-right: 30px;
+  padding-bottom: 41px;
 }
 .floodImage2 {
   position: relative;
@@ -240,6 +239,9 @@
   position: relative;
   background-repeat: no-repeat;
 }
+.redNumber{
+  color: #E3010F; 
+}
 
 // **** Mobile ****
 
@@ -256,6 +258,7 @@
     margin-top: initial;
     margin-left: initial;
     margin-bottom: 15px;
+    padding-bottom: initial; 
   }
   .govuk-panel__body {
     font-size: 1.3rem !important;
